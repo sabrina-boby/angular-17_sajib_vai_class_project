@@ -1,0 +1,35 @@
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+}
+
+.container {
+  width: 95%;
+  max-width: 1200px;
+  margin: 16px auto;
+}
+
+.title {
+  margin-bottom: 12px;
+  h2 {
+    text-align: center;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-bottom: 30px;
+
+}
+
+.loader {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 0;
+}

@@ -1,0 +1,45 @@
+
+.sub_container {
+    width: 80%;
+    // background: red;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.header {
+    h2 {
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+
+.package_booking_sections {
+    background: white;
+    margin-top: 40px;
+    padding: 50px;
+
+    .package_section {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        h3{
+            font-weight: 500;
+        }
+        p{
+            font-weight: 400;
+        }
+    }
+   
+    .package_details_row_right {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        text-align: right;
+        justify-content: center;
+    }
+    hr{
+        border-top: 1px solid rgb(230, 230, 230);
+    }
+}

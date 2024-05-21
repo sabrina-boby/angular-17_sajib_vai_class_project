@@ -1,0 +1,15 @@
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 36px auto;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn-default {
+  background: #d83333 !important;
+  color: #fff !important;
+  border-radius: 20px;
+}
+
