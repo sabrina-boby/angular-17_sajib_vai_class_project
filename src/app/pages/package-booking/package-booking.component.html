@@ -9,7 +9,7 @@
                 <h3>Package Name</h3>
             </div>
             <div class="package_details_row_right">
-                <p>Standard Enterprise Solution</p>
+                <p>{{package?.packageName}}</p>
             </div>
         </div>
         <hr>
@@ -18,7 +18,7 @@
                 <h3>Package Price</h3>
             </div>
             <div class="package_details_row_right">
-                <p>Standard Enterprise Solution</p>
+                <p>${{package.priceTk}}</p>
             </div>
         </div>
         <hr>
@@ -27,7 +27,7 @@
                 <h3>Package Description</h3>
             </div>
             <div class="package_details_row_right">
-                <p>Standard Enterprise Solution</p>
+                <p>{{package.description}}</p>
             </div>
         </div>
         <hr>
@@ -36,13 +36,9 @@
                 <h3>Package Informations</h3>
             </div>
             <div class="package_details_row_right">
-                <p>Standard Enterprise Solution</p>
-                <p>Facebook Banner</p>
-                <p>Business Website (Standard)</p>
-                <p>Content creation</p>
-                <p>Standard Enterprise Solution</p>
-                <p>Standard Enterprise Solution</p>
-                <p>Standard Enterprise Solution</p>
+                <span *ngFor="let item of package.informations">
+                    <p>{{item.shoetDes}}</p>
+                </span>
             </div>
         </div>
         <hr>

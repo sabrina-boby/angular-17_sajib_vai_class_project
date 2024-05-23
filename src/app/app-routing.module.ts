@@ -21,6 +21,10 @@ const routes: Routes = [
   {
     path: 'package-booking',
     loadChildren: () => import('./pages/package-booking/package-booking.module').then(m => m.PackageBookingModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import('./pages/form/form.module').then(m => m.FormModule)
   }
 ];
 

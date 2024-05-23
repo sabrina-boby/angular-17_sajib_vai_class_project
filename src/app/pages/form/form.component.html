@@ -1,0 +1,67 @@
+<!-- form start-->
+<div class="sub_container">
+    <div class="header">
+        <h2>Package Information</h2>
+    </div>
+    <div class="form_full_sections ">
+
+        <div class="form_section">
+            <p>Full Name *</p>
+            <div class="example-container">
+                <mat-form-field class="div_height_fix">
+                    <input matInput placeholder="Enter Your Full Name..." [formControl]="name"
+                        (blur)="updateErrorMessage()" required>
+                    @if (name.invalid) {
+                    <mat-error>{{errorMessage}}</mat-error>
+                    }
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="form_section">
+            <div class="form_fild">
+                <div class="left_field" class="div_height_fix">
+                    <p>Email *</p>
+                    <div class="example-container">
+                        <mat-form-field class="div_height_fix">
+                            <input matInput placeholder="Enter Your Full Name..." [formControl]="email"
+                                (blur)="updateErrorMessage()" required>
+                            @if (email.invalid) {
+                            <mat-error>{{errorMessage}}</mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+                <div class="right_field" class="div_height_fix">
+                    <p>Phone Number *</p>
+                    <div class="example-container">
+                        <mat-form-field class="div_height_fix">
+                            <input matInput placeholder="Enter Your Full Name..." [formControl]="phone_number"
+                                (blur)="updateErrorMessage()" required>
+                            @if (phone_number.invalid) {
+                            <mat-error>{{errorMessage}}</mat-error>
+                            }
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form_section">
+            <p>Message *</p>
+            <div class="example-container">
+                <mat-form-field class="div_height_fix">
+                    <textarea matInput placeholder="Type something..." [formControl]="message"
+                        (blur)="updateErrorMessage()" required></textarea>
+                    @if (message.invalid) {
+                    <mat-error>{{errorMessage}}</mat-error>
+                    }
+                </mat-form-field>
+            </div>
+        </div>
+        <div class="button_div">
+            <div class="button"><b>SUBMIT</b></div>
+        </div>
+    </div>
+</div>
+<!-- form end-->

@@ -18,6 +18,7 @@
     background: white;
     margin-top: 40px;
     padding: 50px;
+    box-shadow: 0px 15px 10px -15px #c4c4c4; 
 
     .package_section {
         display: flex;
@@ -41,5 +42,14 @@
     }
     hr{
         border-top: 1px solid rgb(230, 230, 230);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .package_booking_sections {
+        padding: 30px;
+    }
+    .sub_container {
+        width: 100%;
     }
 }

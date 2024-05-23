@@ -3,7 +3,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { PackageBookingComponent } from './package-booking.component';
 
 const routes: Routes = [
-  {path: '', component: PackageBookingComponent}
+  {
+    path: '',
+    component: PackageBookingComponent
+  }
 ];
 
 
